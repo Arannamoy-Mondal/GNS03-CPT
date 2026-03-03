@@ -58,7 +58,7 @@ switchport mode access
 Switch(config-if)#switchport access vlan 10
 ```
 
-
+### Create vlan
 ```mermaid
 graph TD;
 A[exit] --> B[show vlan]
@@ -69,6 +69,8 @@ E[switchport mode access] --> F[switchport access vlan id]
 F[switchport access vlan id] --> G[ip address 192.168.77.106 255.255.255.0]
 ```
 
+### Setup telnet for lan access 
+
 ```mermaid
 graph TD;
 A[conf t] --> X[enable secret password]
@@ -76,4 +78,13 @@ X[enable secret password] --> B[line vty 0 15]
 B[line vty 0 15] --> C[password 1234]
 C[password 1234] --> D[login]
 D[login] --> E[exit]
+```
+
+### DTP -> Dynamic Trunking Protocol
+
+```mermaid
+A[en] --> B[show interfaces trunk] 
+B[show interfaces trunk] --> C[conf t]
+C[conf t] --> D[switchport mode trunk]
+D[switchport mode trunk] --> E[switchport trunk allowed vlan 10,20,777]
 ```
