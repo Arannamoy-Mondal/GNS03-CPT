@@ -1,15 +1,3 @@
-```mermaid
-graph TD;
-A[Privileged EXEC Mode exit] --> B[show vlan]
-B[vlan show] --> C[conf t]
-C[conf t] --> D[interface id ]
-D[interface id ] --> E[switchport mode access]
-E[switchport mode access] --> F[switchport access vlan id]
-
-```
-
-
-
 # Privileged EXEC Mode
 ```bash
 exit
@@ -64,4 +52,15 @@ switchport mode access
 
 ```bash
 Switch(config-if)#switchport access vlan 10
+```
+
+
+```mermaid
+graph TD;
+A[exit] --> B[show vlan]
+B[vlan show] --> C[conf t]
+C[conf t] --> D[interface id ]
+D[interface id ] --> E[switchport mode access]
+E[switchport mode access] --> F[switchport access vlan id]
+
 ```
