@@ -1,9 +1,9 @@
 ```mermaid
 graph TD;
-A[Privileged EXEC Mode (exit)] --> B[show vlan]
+A[Privileged EXEC Mode exit] --> B[show vlan]
 B[vlan show] --> C[conf t]
-C[conf t] --> D[interface id # fa0/1]
-D[interface id # fa0/1] --> E[switchport mode access]
+C[conf t] --> D[interface id ]
+D[interface id ] --> E[switchport mode access]
 E[switchport mode access] --> F[switchport access vlan id]
 
 ```
