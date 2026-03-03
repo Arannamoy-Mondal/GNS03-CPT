@@ -1,3 +1,6 @@
+# Wire connection
+- For similar device Copper Cross Over
+- For dissimilar device Copper Straight Through
 # Create vlan
 ### Privileged EXEC Mode
 ```bash
