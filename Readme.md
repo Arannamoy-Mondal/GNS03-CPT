@@ -67,6 +67,7 @@ F[switchport access vlan id] --> G[ip address 192.168.77.106 255.255.255.0]
 ```
 
 ```mermaid
+graph TD;
 A[conf t] --> X[enable secret password]
 X[enable secret password] --> B[line vty 0 15]
 B[line vty 0 15] --> C[password 1234]
