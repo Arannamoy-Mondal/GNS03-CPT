@@ -83,6 +83,7 @@ D[login] --> E[exit]
 ### DTP -> Dynamic Trunking Protocol
 
 ```mermaid
+graph TD;
 A[en] --> B[show interfaces trunk] 
 B[show interfaces trunk] --> C[conf t]
 C[conf t] --> D[switchport mode trunk]
